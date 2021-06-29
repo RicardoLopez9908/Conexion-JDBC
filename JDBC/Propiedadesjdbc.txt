@@ -1,0 +1,5 @@
+Driverjdbc = com.mysql.cj.jdbc.Driver
+Urljdbc = jdbc:mysql://localhost:3306/VentasDeLibros
+Usuariojdbc = root
+Clavejdbc = root
+
