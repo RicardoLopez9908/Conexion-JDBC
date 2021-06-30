@@ -12,5 +12,5 @@ _Esto le permitira al proyecto poder acceder a las clases que contiene el archiv
 
 ALGUNAS POSIBLES INTERACCIONES VISTAS DESDE UN DIAGRAMA:
 
-<img src="https://github.com/RicardoLopez9908/Conexion-JDBC/blob/master/Interacciones%20JDBC.png" width="500">
+<img src="https://github.com/RicardoLopez9908/Conexion-JDBC/blob/master/Interacciones%20JDBC.png" width="600">
 
