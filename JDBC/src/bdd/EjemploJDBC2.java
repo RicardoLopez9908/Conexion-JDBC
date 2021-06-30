@@ -6,6 +6,8 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+//EJEMPLO BASICO DE CONEXION JDBC A BASE DE DATOS MYSQL CON EJECUCION DE CONSULTAS A TRAVES DE SENTENCIAS (STATEMENT)
+
 public class EjemploJDBC2 {
 	private java.sql.Connection con = null;
 	private final String protocolo = "jdbc:mysql://";
