@@ -5,6 +5,8 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 
+//EJEMPLO BASICO DE CONEXION JDBC A BASE DE DATOS MYSQL
+
 public class EjemploJDBC1 {
 	private java.sql.Connection con = null;
 	private final String protocolo = "jdbc:mysql://";			
