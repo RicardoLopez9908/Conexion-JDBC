@@ -9,3 +9,7 @@
 - Una vez que ubicamos nuestro driver en la carpeta, nos dirigimos a las configuraciones del proyecto y seleccionamos: Build Path > Configure Build Path ... > Libraries > add JARs...  Y finalmente, luego de seleccionar nuestro driver, Apply and Close.
 
 _Esto le permitira al proyecto poder acceder a las clases que contiene el archivo .jar_
+
+ALGUNAS POSIBLES INTERACCIONES VISTAS DESDE UN DIAGRAMA:
+
+[img]
