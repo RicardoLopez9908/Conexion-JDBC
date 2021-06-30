@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
+//EJEMPLO MENOS FLEXIBLE DE CONEXION JDBC A BASE DE DATOS MYSQL (PORQUE SE UTILIZA SOLO EL METODO MAIN Y NO TENEMOS EN CUENTA POSIBLES MODIFICACIONES DE CODIGO)
+
 public class EjemploJDBC3 {
 	public static void main(String args[]) {
 		try {
