@@ -1,0 +1,70 @@
+CREATE DATABASE VentasDeLibros;
+
+USE VentasDeLibros;
+
+
+CREATE TABLE Cliente (
+	DNI CHAR(8) NOT NULL,
+	NomCliente CHAR(40),
+	Direccion CHAR(100)
+);
+
+CREATE UNIQUE INDEX idx1 ON Cliente (DNI);
+
+CREATE TABLE Libros (
+	DNI CHAR(8) NOT NULL,
+	ISBN CHAR(10) NOT NULL,
+	Cantidad INT
+);
+
+CREATE UNIQUE INDEX idx2 ON Libros (ISBN);
+CREATE INDEX idx1 ON Libros (DNI);
+
+CREATE TABLE Inventario (
+	ISBN CHAR(10) NOT NULL,
+	Precio real
+);
+
+CREATE UNIQUE INDEX idx2 ON Inventario (ISBN);
+
+-- 
+--  Datos Iniciales
+-- 
+
+INSERT INTO Cliente VALUES ('16828325', 'Test Cliente', 'Av. San Martín 3333, Ciudad Autónoma de Buenos Aires, BA');
+
+INSERT INTO Cliente VALUES ('21512654', 'Luciano Aymar', 'Pedro Mendoza 1234, Rosario, SF');
+
+INSERT INTO Cliente VALUES ('14365895', 'Pedro Cangele', 'Olazabal 8574, San Salvador de Jujuy, JU');
+
+INSERT INTO Cliente VALUES ('22456987', 'Omar Peralta', 'Juramento 9090, Catamarca, CA');
+
+INSERT INTO Cliente VALUES ('13365478', 'Sebastián Ornazabal', 'Av. Juan de Garay 870, Usuahia, TF');
+
+INSERT INTO Cliente VALUES ('15178239', 'Juan Cruz Lacarra', 'Tacuari 100, San Martín de los Andes, NE');
+
+INSERT INTO Cliente VALUES ('16789456', 'Ignacio Mendez', 'Piedras 345, Mendoza, ME');
+
+INSERT INTO Libros VALUES ('16828325', '0385539002', 200);
+INSERT INTO Libros VALUES ('16828325', '0199678111', 1200);
+INSERT INTO Libros VALUES ('21512654', '1491947152', 120);
+INSERT INTO Libros VALUES ('14365895', '1587206633', 35);
+INSERT INTO Libros VALUES ('22456987', '1568989695', 200);
+INSERT INTO Libros VALUES ('22456987', '1118008189', 109);
+INSERT INTO Libros VALUES ('15178239', '1430264489', 135);
+
+INSERT INTO Inventario VALUES ('0385539002', 135.0);
+INSERT INTO Inventario VALUES ('1118825225', 34.0);
+INSERT INTO Inventario VALUES ('0199678111', 12.375);
+INSERT INTO Inventario VALUES ('0596009208', 20.875);
+INSERT INTO Inventario VALUES ('1491947152', 24.00);
+INSERT INTO Inventario VALUES ('1430264489', 80.125);
+INSERT INTO Inventario VALUES ('1587206633', 6.25);
+INSERT INTO Inventario VALUES ('1568989695', 52.50);
+INSERT INTO Inventario VALUES ('1118008189', 201.875);
+INSERT INTO Inventario VALUES ('0321356683', 13.50);
+
+SELECT * FROM Cliente;
+SELECT * FROM Libros;
+SELECT * FROM Inventario;
+
